@@ -12,4 +12,10 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
                 Assert.assertEquals(0, service.remain(1000));
     }
+    @Test
+    public void shouldRemainPassTest() {
+        CashbackHackService service = new CashbackHackService();
+        Assert.assertEquals(800, service.remain(1200));
+    }
+
 }
